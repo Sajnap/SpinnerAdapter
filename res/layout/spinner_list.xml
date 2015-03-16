@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4F5C7C"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView1"
+        android:orientation="vertical" 
+        android:weightSum="3.0">
+
+        <TextView
+            android:id="@+id/txtview_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_weight="1.0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#1E315F" />
+
+        <TextView
+            android:id="@+id/txtview_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textColor="#8BA7ED" />
+
+        <TextView
+            android:id="@+id/txtview_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#8BA7ED"
+            android:layout_weight="1.0" />
+
+    </LinearLayout>
+
+</RelativeLayout>
